@@ -1,0 +1,239 @@
+/* Margen de 0 y cambiar la letra */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Quitar la decoracion a los enlaces */
+
+.menu a{
+    color: white;
+    text-align: center;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cuando el mouse se pone encima el color cambia */
+
+.menu a:hover{
+    background-color: gray;
+}
+
+.menu-icon{
+    display: none; /* Oculta el icono del menu por defecto */
+    font-size: 2em;
+    padding: 0.9rem 1rem;
+    cursor: pointer; /*Cambia el cursor a una mano cuando se pasa sobre el icono */
+    color: white;
+}
+
+.menu-items{
+    list-style-type: none; /*Quita los puntos de la lista */
+    margin: 0; 
+    padding: 0;
+    display: flex; /* Establece la lista como contenedor flexible */
+    flex-direction: row; /* Organiza los elementos de la lista en fila */
+}
+
+.menu-items li{
+    flex: 1; /* Los elementos de la lista crecen igualmente y llena el espacio disponible */
+}
+
+#menu-toggle{
+    display: none; /* Oculta el checkbox de la vista */
+}
+
+
+.activado{
+    background-color: skyblue;
+}
+
+
+.menu {
+    background-color: black;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+header{
+    background-color: darkcyan;
+    text-align: center;
+    padding: 1em;
+}
+
+h1{
+    font-size: 35px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.padre_futbol{
+    text-align: center;
+    background-color: rgba(224, 255, 255, 0.250);
+}
+
+.col2_futbol{
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em;
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+}
+
+.col{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.8em;
+}
+
+.back_inicio{
+    background-image: url('../img/InicioFondo.png');
+}
+
+.back_futbol{
+    background-image: url('../img/FondoFutbol.png');
+}
+
+.back_baloncesto{
+    background-image: url('../img/FondoBaloncesto.png');
+}
+
+.back_baseball{
+    background-image: url('../img/FondoBaseball.png');
+}
+
+.back_futamericano{
+    background-image: url('../img/background-repeat\ no-repeat;\ background-size\ cover;.png');
+}
+
+.parrafo_futbol p{
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.imagenes_futbol img{
+    width: 60%;
+}
+
+.imagenes_baloncesto img{
+    width: 100%;
+}
+
+.imagenes_baseball img{
+    width: 35%;
+}
+
+.imagenes_futamericano img{
+    width: 40%;
+}
+
+.imagenes_baloncesto{
+    text-align: center;
+}
+
+.padre_tablas_futbol{
+    text-align: center;
+}
+
+.tablas_futbol{
+    text-align: center;
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tablas_futbol td{
+    padding: 0.3em;
+}
+
+caption{
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+.Porteros, .Defensores, .CM, .Delanteros, .Bases, .Aleros, .Ala-pivots, .Pivots, .Pitchers, .Infielders, .Catchers, .Outfielders, .QBs, .RBs, .WRs, .TEs, .OLs, .DLs, .LBs, .DBs{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+    .col2_futbol{
+        width: 85%;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .tablas_futbol{
+        width: 90%;
+        text-align: center;
+    }
+
+    .imagenes_futbol{
+        text-align: center;
+    }
+
+    .padre_tablas_futbol{
+        text-align: center;
+    }
+
+    .col{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:999px) {
+    .col2_futbol{
+        width: 40%;
+        vertical-align: top;
+    }
+
+    .imagenes_futbol{
+        text-align: center;
+    }
+
+    .tablas_futbol{
+        width: 90%;
+        padding: 0.4em;
+    }
+
+    .col{
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    
+    .menu-items {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu-items {
+        display: flex;
+    }
+
+    
+}
